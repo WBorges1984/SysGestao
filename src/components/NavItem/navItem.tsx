@@ -42,21 +42,37 @@ function NavItem(props: IconInterface) {
             <div className="container">
                 <span className="Icon">
                     {props.icon === "BiSolidDashboard" ? (
-                        <BiSolidDashboard />
+                        <BiSolidDashboard fontSize={30} />
                     ) : (
                         ""
                     )}
-                    {props.icon === "BiMoney" ? <BiMoney /> : ""}
-                    {props.icon === "BiUser" ? <BiUser /> : ""}
-                    {props.icon === "BiPaperclip" ? <BiPaperclip /> : ""}
-                    {props.icon === "BiCalendar" ? <BiCalendar /> : ""}
-                    {props.icon === "BiLogOut" ? <BiLogOut /> : ""}
-                    {props.icon === "BiSupport" ? <BiSupport /> : ""}
-                    {props.icon === "BiCog" ? <BiCog /> : ""}
-                    {props.icon === "BiFile" ? <BiFile /> : ""}
-                    {props.icon === "BiCube" ? <BiCube /> : ""}
-                    {props.icon === "BiGroup" ? <BiGroup /> : ""}
-                    {props.icon === "BiStore" ? <BiStore /> : ""}
+                    {props.icon === "BiMoney" ? <BiMoney fontSize={30} /> : ""}
+                    {props.icon === "BiUser" ? <BiUser fontSize={30} /> : ""}
+                    {props.icon === "BiPaperclip" ? (
+                        <BiPaperclip fontSize={30} />
+                    ) : (
+                        ""
+                    )}
+                    {props.icon === "BiCalendar" ? (
+                        <BiCalendar fontSize={30} />
+                    ) : (
+                        ""
+                    )}
+                    {props.icon === "BiLogOut" ? (
+                        <BiLogOut fontSize={30} />
+                    ) : (
+                        ""
+                    )}
+                    {props.icon === "BiSupport" ? (
+                        <BiSupport fontSize={30} />
+                    ) : (
+                        ""
+                    )}
+                    {props.icon === "BiCog" ? <BiCog fontSize={30} /> : ""}
+                    {props.icon === "BiFile" ? <BiFile fontSize={30} /> : ""}
+                    {props.icon === "BiCube" ? <BiCube fontSize={30} /> : ""}
+                    {props.icon === "BiGroup" ? <BiGroup fontSize={30} /> : ""}
+                    {props.icon === "BiStore" ? <BiStore fontSize={30} /> : ""}
                 </span>
                 <Link className="link" to={`/${props.page}`}>
                     {props.text}

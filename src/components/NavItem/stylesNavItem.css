@@ -27,7 +27,7 @@
     padding: 5% 10%;
     width: 100%;
     text-align: start;
-    font-size: 15px;
+    font-size: 23px;
     font-weight: 600;
 }
 .container .link:hover {
@@ -40,7 +40,7 @@
 .Icon {
     position: relative;
     color: #fff;
-    top: 7px;
+    top: 15px;
     left: 5px;
 }
 

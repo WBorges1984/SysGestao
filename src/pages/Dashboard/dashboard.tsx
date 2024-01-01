@@ -16,11 +16,13 @@ interface iDashboard {
 
 function Dashboard(props: iDashboard) {
     return (
-        <div className="container">
+        <div>
             {props.page === "dashboard" ? (
                 <>
                     <Nav />
-                    <GraphChart />
+                    <div className="conteudo">
+                        <GraphChart />
+                    </div>
                 </>
             ) : (
                 ""
@@ -28,7 +30,9 @@ function Dashboard(props: iDashboard) {
             {props.page === "agenda" ? (
                 <>
                     <Nav />
-                    <Agenda />
+                    <div className="conteudo">
+                        <Agenda />
+                    </div>
                 </>
             ) : (
                 ""
@@ -36,7 +40,9 @@ function Dashboard(props: iDashboard) {
             {props.page === "clientes" ? (
                 <>
                     <Nav />
-                    <Clientes />
+                    <div className="conteudo">
+                        <Clientes />
+                    </div>
                 </>
             ) : (
                 ""

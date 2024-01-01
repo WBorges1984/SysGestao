@@ -48,8 +48,8 @@ export function GraphChart() {
                             ["Masculino", 5.5],
                             ["Feminino", 12],
                         ]}
-                        width="400px"
-                        height="400px"
+                        width="300px"
+                        height="300px"
                         legendToggle
                     />
                 </div>
@@ -61,8 +61,8 @@ export function GraphChart() {
                             ["Masculino", 5.5],
                             ["Feminino", 12],
                         ]}
-                        width="400px"
-                        height="400px"
+                        width="300px"
+                        height="300px"
                         legendToggle
                     />
                 </div>
@@ -74,8 +74,21 @@ export function GraphChart() {
                             ["Masculino", 5.5],
                             ["Feminino", 12],
                         ]}
-                        width="400px"
-                        height="400px"
+                        width="300px"
+                        height="300px"
+                        legendToggle
+                    />
+                </div>
+                <div className="grafico">
+                    <Chart
+                        chartType="PieChart"
+                        data={[
+                            ["Sexo", "Percentual"],
+                            ["Masculino", 5.5],
+                            ["Feminino", 12],
+                        ]}
+                        width="300px"
+                        height="300px"
                         legendToggle
                     />
                 </div>

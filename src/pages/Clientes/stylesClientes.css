@@ -1,0 +1,10 @@
+.containerClientes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.conteudo h1 {
+    text-align: center;
+}
