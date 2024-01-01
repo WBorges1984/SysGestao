@@ -1,0 +1,52 @@
+.container {
+    display: flex;
+}
+.container button {
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 5%;
+    padding: 5% 10%;
+    width: 100%;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 600;
+}
+.container button:hover {
+    cursor: pointer;
+    color: aqua;
+    box-shadow: inset;
+    font-style: italic;
+}
+
+.container .link {
+    color: aliceblue;
+    background-color: transparent;
+    border: none;
+    margin-bottom: 5%;
+    padding: 5% 10%;
+    width: 100%;
+    text-align: start;
+    font-size: 15px;
+    font-weight: 600;
+}
+.container .link:hover {
+    cursor: pointer;
+    color: aqua;
+    box-shadow: inset;
+    font-style: italic;
+}
+
+.Icon {
+    position: relative;
+    color: #fff;
+    top: 7px;
+    left: 5px;
+}
+
+hr {
+    border-color: rgba(12, 86, 155, 0.4);
+    height: 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+}

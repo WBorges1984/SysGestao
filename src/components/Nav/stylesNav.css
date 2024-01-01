@@ -1,0 +1,17 @@
+.containerNav {
+    background-color: rgb(7, 68, 126);
+    width: 130px;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+}
+
+.imgLogo {
+    display: flex;
+    flex-direction: row;
+    padding-left: 10%;
+    margin: 10% 5%;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}

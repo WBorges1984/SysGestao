@@ -1,26 +1,43 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import "./App.css";
+import Dashboard from "./pages/Dashboard/dashboard";
+import Home from "./pages/Home/home";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Routes>
+                <Route path="" element={<Home />} />
+                <Route
+                    path="/dashboard"
+                    element={<Dashboard page="dashboard" />}
+                />
+                <Route path="/agenda" element={<Dashboard page="agenda" />} />
+                <Route
+                    path="/clientes"
+                    element={<Dashboard page="clientes" />}
+                />
+                <Route path="/vendas" element={<Dashboard page="vendas" />} />
+                <Route
+                    path="/servicos"
+                    element={<Dashboard page="servicos" />}
+                />
+                <Route
+                    path="/produtos"
+                    element={<Dashboard page="produtos" />}
+                />
+                <Route
+                    path="/relatorios"
+                    element={<Dashboard page="relatorios" />}
+                />
+                <Route
+                    path="/parametros"
+                    element={<Dashboard page="parametros" />}
+                />
+                <Route path="/logoff" element={<Dashboard page="logoff" />} />
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;
